@@ -15,7 +15,7 @@ $("#number_of_columns").text(numberOfColumns);
 
 //control max tile refresh time
 $("#decrease_max_tile_refresh_time").click(function() {
-	if (maxTileRefreshTime >= 100) {
+	if (maxTileRefreshTime > 100) {
 		maxTileRefreshTime -= 100;
 		$("#max_tile_refresh_time").text(maxTileRefreshTime);
 	}
