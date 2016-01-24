@@ -1,7 +1,8 @@
-var numberOfColumns = 3;
-var numberOfRows = 3;
 
-var maxTileRefreshTime = 10000;
+var numberOfColumns = 10;
+var numberOfRows = 10;
+
+var maxTileRefreshTime = 2;
 
 var tileInterval = setInterval(function(){
 	var index = Math.floor((Math.random() * calculateNumOfTiles()) + 1);
@@ -14,14 +15,14 @@ $("#number_of_columns").text(numberOfColumns);
 
 //control max tile refresh time
 $("#decrease_max_tile_refresh_time").click(function() {
-	if (maxTileRefreshTime >= 100) {
-		maxTileRefreshTime -= 100;
+	if (maxTileRefreshTime >= 1000) {
+		maxTileRefreshTime -= 1000;
 		$("#max_tile_refresh_time").text(maxTileRefreshTime);
 	}
 });
 
 $("#increase_max_tile_refresh_time").click(function() {
-	maxTileRefreshTime += 100;
+	maxTileRefreshTime += 1000;
 	$("#max_tile_refresh_time").text(maxTileRefreshTime);
 });
 
