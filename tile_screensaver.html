@@ -1,0 +1,40 @@
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="settings_panel">
+		<i class="toggle-settings fa fa-times-circle-o fa-2x"></i>	
+		<i class="tile-shape fa fa-circle-o fa-2x"></i>
+		<form>
+			<div>
+				<h4>Max Tile Refresh Time:</h4>
+				<label id="max_tile_refresh_time">1</label>
+				<div class="stepper-div">
+					<i id="decrease_max_tile_refresh_time" class="fa fa-minus fa-1x"></i>
+					<i id="increase_max_tile_refresh_time" class="fa fa-plus fa-1x"></i>
+				</div>
+			</div>
+			<div>
+				<h4>Rows:</h4>
+				<label id="number_of_rows">1</label>
+				<div class="stepper-div">
+					<i id="decrease_number_of_rows" class="fa fa-minus fa-1x"></i>
+					<i id="increase_number_of_rows" class="fa fa-plus fa-1x"></i>
+				</div>
+			</div>
+			<div>
+				<h4>Columns:</h4>
+				<label id="number_of_columns">1</label>
+				<div class="stepper-div">
+					<i id="decrease_number_of_columns" class="fa fa-minus fa-1x"></i>
+					<i id="increase_number_of_columns" class="fa fa-plus fa-1x"></i>
+				</div>
+			</div>
+		</form>
+	</div>
+	<i class="toggle-settings fa fa-cog fa-2x"></i>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="main.js"></script>
+</body>
