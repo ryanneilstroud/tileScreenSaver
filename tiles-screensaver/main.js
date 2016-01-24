@@ -15,7 +15,7 @@ $("#number_of_columns").text(numberOfColumns);
 
 //control max tile refresh time
 $("#decrease_max_tile_refresh_time").click(function() {
-	if (maxTileRefreshTime >= 100) {
+	if (maxTileRefreshTime > 100) {
 		maxTileRefreshTime -= 100;
 		$("#max_tile_refresh_time").text(maxTileRefreshTime);
 	}
@@ -28,13 +28,11 @@ $("#increase_max_tile_refresh_time").click(function() {
 
 //control number of ROWS
 $("#decrease_number_of_rows").click(function() {
-	if (numberOfRows >= 0) {
+	if (numberOfRows >= 1) {
 		numberOfRows -= 1;
 		$("#number_of_rows").text(numberOfRows);
 		$("div.tile").remove();
 		appendTiles();
-
-		console.log("hello");
 	}
 });
 
@@ -47,7 +45,7 @@ $("#increase_number_of_rows").click(function() {
 
 //control number of COLUMNS
 $("#decrease_number_of_columns").click(function() {
-	if (numberOfColumns >= 0) {
+	if (numberOfColumns >= 1) {
 		numberOfColumns -= 1;
 		$("#number_of_columns").text(numberOfColumns);
 		$("div.tile").remove();
