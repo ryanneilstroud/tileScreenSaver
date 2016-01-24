@@ -28,7 +28,7 @@ $("#increase_max_tile_refresh_time").click(function() {
 
 //control number of ROWS
 $("#decrease_number_of_rows").click(function() {
-	if (numberOfRows >= 100) {
+	if (numberOfRows >= 0) {
 		numberOfRows -= 1;
 		$("#number_of_rows").text(numberOfRows);
 		$("div.tile").remove();
@@ -96,6 +96,7 @@ function updateTiles() {
 
 function getRandomNumber() {
 	var t = Math.floor((Math.random() * maxTileRefreshTime));
+	console.log(t);
 	return t;
 }
 
