@@ -2,16 +2,12 @@
 
 A little demo I mocked up awhile back.
 
-# Features
+## Features
 
-## Randomized Colors & Refresh Time
+- Randomized colors & set refresh time.
+- Toggle between squares & circles.
+- Increase (or decrease) the number of rows and columns
 
-Colors are generated randomly, but allows you to refresh those colors with a max time in ms.
-
-## Grid View
-
-Increase (or decrease) the number of rows and columns to your liking.
-
-# A Demo:
+# Demo:
 
 http://ryanneilstroud.github.io/tiles-screensaver/index.html
