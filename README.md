@@ -6,8 +6,8 @@ A little demo I mocked up awhile back.
 
 - Randomized colors & set refresh time.
 - Toggle between squares & circles.
-- Increase (or decrease) the number of rows and columns
+- Increase (or decrease) the number of rows and columns.
 
 # Demo:
 
-http://ryanneilstroud.github.io/tiles-screensaver/index.html
+http://ryanneilstroud.github.io/tiles-screensaver
